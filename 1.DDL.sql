@@ -31,3 +31,7 @@ show create table author;
 -- author_id 가 위 author 테이블을 참조하고 있다는 것을 함께 작성
 -- 테이블 전체에 대한 제약 조건(foreign key)이나 PK는 맨 마지막에 INT PRIMARY KEY(ID) 이런 식으로도 작성 가능
 create table posts(id INT PRIMARY KEY, title VARCHAR(255), content VARCHAR(255), author_id INT, FOREIGN KEY (author_id) references author (id));
+
+-- 테이블 index 조회
+show index from author;
+show index from posts;

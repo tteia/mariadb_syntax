@@ -8,3 +8,8 @@ select * from author;
 
 -- id, title, content, author_id -> post에 한 건 추가
 insert into posts(id, title, content, author_id) values(1, 'hello', 'hello world', 1);
+
+-- 테이블 제약 조건 조회
+-- 내가 현재 use하고 있는 스키마에서는 select * from 테이블명;
+-- use 하고 있지 않다면? selecet * from board.author; (스키마 명.table);
+select * from information_schema.key_column_usage where table_name = 'posts';
