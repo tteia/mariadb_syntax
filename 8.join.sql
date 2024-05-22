@@ -51,10 +51,7 @@ WHERE i.animal_id is null ORDER BY o.animal_id;
 SELECT animal_id, name FROM animal_outs o WHERE animal_id NOT IN(SELECT ANIMAL_ID FROM animal_ins) ORDER BY ANIMAL_ID;
 
 
--- 집계 함수
-SELECT COUNT (*) FROM author; -- (= SELECT COUNT(ID) FROM AUTHOR;) >> 행의 갯수를 세는 거라 ID 갯수와 동일함.
-SELECT SUM(price) FROM post;
-SELECT AVG(price) FROM post; -- 반올림하면 ROUND(AVG(PRICE), 소수점자리) >> SELECT ROUND(AVG(price),0) FROM post;
+
 
 -- group by와 집계함수
 SELECT author_id FROM post GROUP BY author_id; -- author_id 로 그룹화 했기 때문에 title을 조회할 수 없음!
