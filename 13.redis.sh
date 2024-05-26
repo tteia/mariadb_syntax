@@ -42,3 +42,5 @@ decr likes:posting:1
 set product:1:stock 100
 decr product:1:stock
 get product:1:stock
+
+# bash쉘을 활용하여 재고 감소 프로그램 작성
