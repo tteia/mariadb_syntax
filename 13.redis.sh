@@ -52,7 +52,7 @@ get product:1:stock
 # \ 달아주는 것을 escape문이라고 한다 !
 
 # 왜 select 문을 안 쓰고 아래처럼 작성했을까..? -> 속도. 빈번하게 발생하는 경우에 O
-# 캐싱(저장) 해놓은 redis 에서 조회하는게 훨씬 빠르다.
+# 캐싱(저장) 해놓은 redis 에서 조회하는게 훨씬 빠르다!
 set user:1:detail "{\"name\":\"hong\", \"email\":\"test@test.com\", \"age\":30}" ex 10
 
 # list
